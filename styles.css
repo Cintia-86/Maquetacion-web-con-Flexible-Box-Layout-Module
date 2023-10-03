@@ -1,0 +1,109 @@
+font: inherit;
+vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hggroup, menu, nav, section {
+	display: block;
+}
+body{
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* -------- 1. LAYOUT --------- */
+ 
+body { text-align: center;}
+
+.wrapper { width: 1024px; margin: 0 auto; text-align: left;} 
+
+.flex{}
+	.item {}
+
+	.flex { 
+
+		border: 2px solid #ccc;
+		margin: 10px 0;
+		/*
+		display: flex | inline-flex;
+		*/
+		display:flex;
+		/*
+		flex-flow: <'flex-direction'> || <'flex-wrap'>;
+		flex-direction: row | row-reverse | column | column-reverse;
+		flex-wrap: nowrap | wrap | wrap-reverse;
+		*/
+
+		flex-flow: row wrap;
+
+		/*justify-content: flex-star | flex-end | center | baseline | stretch;
+		*/
+		align-items:center;
+
+		*/
+		align-content: flex-star | flex-end | center | space-between | space-around | stretch;
+		*/
+		align-content: flex-start;
+
+
+	}
+
+	/*
+	order: <integer>;
+	*/
+	.order-1 { order:1;}
+	.order-1 { order:2;}
+	.order-1 { order:3;}
+
+	.item {
+		/*
+		flex:none 7 [ <'flex-shirnk'>? || <'flex-basis'> ]
+		*/
+		flex:1 25% auto;
+
+	}
+
+	.item-2 {
+		flex:2 90% auto;
+	}
+
+	.item-3 {
+		flex:3 10% auto;
+	}
+
+/* -------- 2. GENERIC ITEMS --------- */
+
+/* -------- 3. LIST --------- */
+
+/* -------- 4. FORM --------- */
+
+/* -------- 5. MEDIAQUERY ---------- */
+
+@media screen and (max-width: 780px) {}
+
+@media screen and (max-width: 600px) {}
+
+@media screen and (max-width: 360px) {}
+
+
+
+
+
+
+
+
+
